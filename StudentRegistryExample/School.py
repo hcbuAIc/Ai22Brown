@@ -27,8 +27,8 @@ classes = [
 for c in classes:
     courseRegistry.append([])
     for i in range(5):
-        name = c.split(",")[0]
-        subject = c.split(",")[1]
+        name = c[i].split(",")[0]
+        subject = c[i].split(",")[1]
         
         newClass = Course.Course(name,subject,random.choice(surnames))
         courseRegistry[-1].append(newClass)
